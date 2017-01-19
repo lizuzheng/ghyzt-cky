@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cky.ghyzt.ZhuanTiTongJiActivity" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_caijishujuchaxun"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:text="采集数据查询" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="#D9D9D9" />
+
+        <Button
+            android:id="@+id/btn_tubanchaxun"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:text="图斑查询" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:background="#D9D9D9" />
+
+        <Button
+            android:id="@+id/btn_jianshebutubanchaxun"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:text="建设部图斑查询" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include_chacun_caiji"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/include_chacun_caiji" />
+
+    <include
+        android:id="@+id/include_chacun_tuban"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/include_chacun_tuban"
+        android:visibility="gone" />
+    
+     <include
+        android:id="@+id/include_chacun_jianshebu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/include_jianshebu"
+        android:visibility="gone" />
+
+</LinearLayout>

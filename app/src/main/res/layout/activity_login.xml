@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/log_beijing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/loginheng"
+     >
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="220dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/logintouming"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="用户登录"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tv_user"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:background="@drawable/editstyle"
+            android:drawableLeft="@mipmap/user_ico"
+            android:hint="用户名"
+            android:textColor="#B4B4B4" />
+
+        <EditText
+            android:id="@+id/tv_pwd"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/editstyle"
+            android:drawableLeft="@mipmap/paww_ico"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:textColor="#B4B4B4" />
+
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/savepwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住密码" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/buttonstyleall"
+                android:text="登录" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_zhuce"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="用户注册"
+            android:layout_marginTop="3dp"
+            android:textColor="#66CBEA"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

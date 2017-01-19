@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <Button
+            android:id="@+id/btn_quxian_tuban"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#D9D9D9"
+            android:text="全部区市县" />
+
+        <EditText
+            android:id="@+id/edit_sousuotiaojian_tuban"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/editstyle"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="请输入编号、位置或备注关键字" />
+
+        <Button
+            android:id="@+id/btn_sousuo_tuban"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#D9D9D9"
+            android:text="搜索" />
+        
+        <include 
+            android:id="@+id/include_tuban_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            layout="@layout/child_chaxun_tuban"
+            android:visibility="gone"
+            />
+        
+
+        <ListView
+            android:id="@+id/lv_jieguo_tuban"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

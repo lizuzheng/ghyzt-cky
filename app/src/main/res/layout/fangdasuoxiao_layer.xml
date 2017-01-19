@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="40dp"
+    android:layout_height="90dp"    
+    android:background="#00000000"
+    android:orientation="vertical" >
+    <Button 
+        android:id="@+id/fangda"
+        android:layout_width="35dp"
+        android:layout_height="35dp" 
+        android:layout_gravity="center" 
+        android:background="@drawable/fangda_style"     
+        />
+    <Button 
+        android:id="@+id/suoxiao"
+        android:layout_width="35dp"
+        android:layout_height="35dp" 
+        android:layout_gravity="center"  
+        android:background="@drawable/suoxiao_style"     
+        />
+
+</LinearLayout>

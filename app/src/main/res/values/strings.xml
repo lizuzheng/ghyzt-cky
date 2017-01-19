@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="appname">规划一张图-院</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_zhuan_ti_tong_ji">ZhuanTiTongJiActivity</string>
+    <string name="title_activity_zhuan_ti_cha_xun">ZhuanTiChaXunActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_cai_ji_dian_dao_chu">CaiJiDianDaoChuActivity</string>
+
+</resources>

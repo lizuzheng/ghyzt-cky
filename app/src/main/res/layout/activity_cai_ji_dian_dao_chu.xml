@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cky.ghyzt.CaiJiDianDaoChuActivity" >
+
+    <!-- 标题 -->
+
+    <include layout="@layout/title_bar" />
+
+    <!-- 采集点列表 -->
+
+    <include
+        android:id="@+id/include_caijidiantitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/child_caiji_daochu" />
+
+    <!-- 列表 -->
+
+    <ListView
+        android:id="@+id/lv_caiji_jieguo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginTop="5dp" >
+    </ListView>
+
+</LinearLayout>

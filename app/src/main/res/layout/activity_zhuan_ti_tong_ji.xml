@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cky.ghyzt.ZhuanTiTongJiActivity" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_caijishujutognji"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#D9D9D9"
+            android:text="采集数据统计" />
+
+        <Button
+            android:id="@+id/btn_tubantongji"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:text="图斑统计" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/include_caijishuju"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        layout="@layout/include_caijishuju" />
+    
+   <!--  图斑统计 -->
+   
+    <include
+        android:id="@+id/include_tubantongji"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        layout="@layout/include_tubantongji" />
+
+</LinearLayout>

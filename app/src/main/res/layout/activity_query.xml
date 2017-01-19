@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sousuo_btn_fanhui"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/fanhui9"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/sousuo_ed_sousuo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="8dp"
+            android:layout_weight="10"
+            android:background="#FFFFFF"
+            android:hint="搜索" />
+
+        <Spinner
+            android:id="@+id/sousuo_sp"
+            android:layout_width="80dp"
+            android:layout_height="44dp"
+            android:entries="@array/query"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/sousuo_btn_sousuo"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="#333333"
+            android:text="搜索"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/sousuo_list"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"   
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

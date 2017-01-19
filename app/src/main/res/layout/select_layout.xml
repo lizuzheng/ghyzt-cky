@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp" 
+    android:background="#E0E1E0"
+    >
+
+    <CheckBox
+        android:id="@+id/map_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:text="市域图" />
+
+    <SeekBar
+        android:id="@+id/map_seekbar"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" 
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"
+        android:max="10"
+        android:progress="10"
+        
+        />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/query_ll"
+        android:layout_width="800dp"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/query_et"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/editstyle"
+            android:hint="搜索"
+            android:ems="10"
+            android:gravity="center_vertical" >
+
+            <requestFocus />
+        </EditText>
+
+        <Spinner
+            android:id="@+id/query_sp"
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:background="#FFFFFFFF"
+            android:entries="@array/query"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/query_btn"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#333333"
+            android:text="搜索"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/query_ll"
+        android:layout_below="@+id/query_ll"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/query_lv"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content" >
+        </ListView>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="white">#FFFFFF</color>
+    <color name="onclick">#EBEBED</color>
+    <color name="fbonclick">#898989</color>
+    
+    <color name="blue">#40AEFF</color>
+    
+    <color name="huise">#ABA9A9</color>
+    
+    <color name="qianbai">#FEFEFE</color>
+    
+</resources>

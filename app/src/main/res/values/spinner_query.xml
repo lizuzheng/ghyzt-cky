@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="query">
+        <item >智能</item>
+        <item >兴趣点</item>
+        <item >道路</item>
+        <item >门址</item>
+               
+    </string-array>
+</resources>

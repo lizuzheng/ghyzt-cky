@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layeryuanjiao"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="#E9E9E9"
+        android:text="选择添加方式"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_select_paizhao"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/drawtextstyle"
+        android:drawableRight="@mipmap/selectimg"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="拍照"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_select_tuku"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/drawtextstyle"
+        android:drawableRight="@mipmap/selectimg"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="从图库选择"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="10dp"/>
+    
+</LinearLayout>

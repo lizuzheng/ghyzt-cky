@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textviewstyle"
+        android:gravity="center"
+        android:height="40dp"
+        android:text="保存图形"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="360dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:text="名称:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/editstyle"
+            android:ems="10"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_anjianbianhao"
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:text="案件编号："
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_anjianbianhao"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/editstyle"
+            android:ems="10"
+            android:visibility="gone"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_quyu"
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:text="区域："
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_quyu"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/editstyle"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:hint="请输入图形名称"
+            android:text="备注:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_beizhu"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/editstyle"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="相片:"
+            android:textSize="16sp" />
+
+        <FrameLayout
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center" >
+
+            <TextView
+                android:id="@+id/dialog_filename"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/editstyle"
+                android:drawableLeft="@mipmap/tainchong"
+                android:drawablePadding="100dp"
+                android:gravity="center_vertical"
+                android:text="未添加任何图片"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btb_camera"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonstyright"
+                android:text="添加照片"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <CheckBox
+            android:id="@+id/dia_cb_gongxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="是否允许共享"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:background="#DCDCDC" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="#00000000"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="149dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonstylelft_down"
+            android:text="取消"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/fengexian"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btb_save"
+            android:layout_width="149dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonstyright_down"
+            android:text="保存"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

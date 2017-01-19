@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:li="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttom_yinying92"
+        android:gravity="center" >
+
+        <com.cky.view.ImageBtn
+            android:id="@+id/ib_allimg"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/imagebtn_style"
+            li:src="@mipmap/allmap_update"
+            li:text="全图" />
+
+          <com.cky.view.ImageBtn
+           android:id="@+id/ib_shangbao"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/imagebtn_style"
+            li:src="@mipmap/shangbao_update"
+            li:text="采集" />
+
+          <com.cky.view.ImageBtn
+        android:id="@+id/ib_celiang"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/imagebtn_style"
+            li:src="@mipmap/celiang_update"
+            li:text="测量" />
+
+          <com.cky.view.ImageBtn
+         android:id="@+id/ib_gengduo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/imagebtn_style"
+            li:src="@mipmap/gengduo_update"
+            li:text="更多" />
+    </LinearLayout>
+
+</RelativeLayout>

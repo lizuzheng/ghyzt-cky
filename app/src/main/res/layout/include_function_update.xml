@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:li="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="65dp"
+    android:orientation="horizontal" >
+
+    <com.cky.view.FunctionBtn
+        android:id="@+id/fb_tuceng"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        li:src="@mipmap/tuceng_update"
+        li:text="图层" />
+
+    <com.cky.view.FunctionBtn
+        android:id="@+id/fb_chaxunlayer"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        li:src="@mipmap/layerquery"
+        li:text="查询属性" />
+
+    <com.cky.view.FunctionBtn
+        android:id="@+id/fb_duibi"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        li:src="@mipmap/yingxiangduibi_update"
+        li:text="影像对比" />
+    
+     <com.cky.view.FunctionBtn
+        android:id="@+id/fb_zhuantichaxun"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        li:src="@mipmap/zhuantichaxun"
+        li:text="专题查询" />
+    
+     
+       <com.cky.view.FunctionBtn
+        android:id="@+id/fb_zhuantitongji"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        li:src="@mipmap/zhuantitongji"
+        li:text="专题统计" />
+    
+
+    <com.cky.view.FunctionBtn
+        android:id="@+id/fb_biaoji"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        li:src="@mipmap/guiji"
+        li:text="轨迹记录" />
+    
+    
+    <com.cky.view.FunctionBtn
+        android:id="@+id/fb_daochu"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        li:src="@mipmap/zhuantitongji"
+        li:text="数据导出" />
+
+    <com.cky.view.FunctionBtn
+        android:id="@+id/fb_qingchu"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        li:src="@mipmap/qingchu_update"
+        li:text="清除" />
+
+</LinearLayout>

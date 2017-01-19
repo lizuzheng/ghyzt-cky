@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layeryuanjiao"
+    android:orientation="vertical"
+     >
+    
+    <LinearLayout 
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/layeryuanjiao"
+        >
+        <TextView 
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="#E9E9E9"
+            android:text="选择要执行的操作"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            />
+         <Button 
+            android:id="@+id/gpsup"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drawtextstyle"
+            android:text="GPS轨迹导出"
+            android:textSize="15sp"
+            android:drawableLeft="@mipmap/daochu"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+             android:visibility="gone"
+            />
+          <Button 
+           android:id="@+id/gpsdelete"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drawtextstyle"
+            android:text="GPS数据删除"
+            android:textSize="15sp"
+            android:drawableLeft="@mipmap/deletegps"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+             android:visibility="gone"
+            />
+        <Button 
+            android:id="@+id/changePwd"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drawtextstyle"
+            android:text="修改密码"
+            android:textSize="15sp"
+            android:drawableLeft="@mipmap/renwu"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            />
+
+        <Button
+            android:id="@+id/shiyongshouce"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drawtextstyle"
+            android:text="使用手册"
+            android:textSize="15sp"
+            android:drawableLeft="@mipmap/exit"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            />
+
+        <Button
+           android:id="@+id/existBtn"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/drawtextstyle"
+            android:text="退出"
+            android:textSize="15sp"
+            android:drawableLeft="@mipmap/exit"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            />
+
+        
+    </LinearLayout>
+
+
+</LinearLayout>

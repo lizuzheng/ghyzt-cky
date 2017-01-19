@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="45.0dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/header_bg" >
+
+        <Button
+            android:id="@+id/title_bar_btn_left"
+            android:layout_width="45dp"
+            android:layout_height="32.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6.6999817dip"
+            android:background="@drawable/title_left_btn"
+            android:drawableLeft="@mipmap/back_btn"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:textColor="#ff333333"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/title_bar_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/title_bar_btn_left"
+            android:layout_alignRight="@+id/title_btn_right"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/title_bar_btn_left"
+            android:gravity="center"
+            android:paddingLeft="50.0dip"
+            android:paddingRight="50.0dip"
+            android:singleLine="true"
+            android:text="Title..."
+            android:textColor="#ff333333"
+            android:textSize="18.0sp" />
+
+        <Button
+            android:id="@+id/title_btn_right"
+            android:layout_width="45dp"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6.6999817dip"
+            android:background="@drawable/title_right_btn"
+            android:gravity="center"
+            android:minWidth="50.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="Right"
+            android:textColor="#ff333333"
+            android:textSize="10.0sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_titlename"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#3B3939"
+        android:gravity="center"
+        android:text="锦城湖湿地图片"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+    
+
+    <GridView
+        android:id="@+id/grid_photo"
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:gravity="center"
+      
+        android:layout_height="fill_parent"
+        android:numColumns="1" >
+    </GridView>
+
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/iv_showphoto"
+        android:layout_width="fill_parent"
+       
+         android:background="#E8F4F5"
+        android:layout_height="fill_parent" />
+
+    </LinearLayout>
+    
+</LinearLayout>

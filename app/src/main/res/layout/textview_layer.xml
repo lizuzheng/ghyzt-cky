@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="40dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_textviews"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:text="2013影像"
+        android:gravity="center"
+        android:background="#FAFAFA"
+        android:textStyle="bold"
+        android:textSize="18sp"
+         />
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@drawable/titlestyle"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:background="@drawable/textviewstyle"
+        android:text="选择图像"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+           
+        />
+    <ListView 
+        android:id="@+id/list_selectimg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" 
+        ></ListView>
+
+</LinearLayout>

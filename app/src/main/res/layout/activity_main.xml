@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <com.esri.android.map.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top|left|center"
+        mapoptions.ZoomLevel="3"
+        android:background="#EFF4D2" >
+    </com.esri.android.map.MapView>
+
+    <!-- 搜索组件 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="-5dp"
+        >
+
+        <include layout="@layout/include_sousuo_update" />
+    </LinearLayout>
+
+    <!-- 定位组件 -->
+
+    <LinearLayout
+        android:id="@+id/main_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="40dp" >
+
+        <include layout="@layout/location_layer" />
+    </LinearLayout>
+
+    <!-- 放大缩小组件 -->
+
+    <LinearLayout
+        android:id="@+id/main_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="10dp" >
+
+        <include layout="@layout/fangdasuoxiao_layer" />
+    </LinearLayout>
+    <!-- 右侧功能区组件 -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp" >
+
+        <include layout="@layout/include_function_update" />
+    </LinearLayout>
+
+    <!-- 版权申明 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/main_size"
+        android:gravity="center"
+        android:text="Copy©2016成都市勘察测绘研究院"
+        android:textSize="11sp" />
+
+    <!-- 审图号 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/main_size"
+        android:gravity="center"
+        android:text="审图号:川S（2013）8号"
+        android:textSize="11sp" />
+
+    <!-- 底部功能栏 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/include_function_buttom" />
+    </LinearLayout>
+
+</RelativeLayout>
